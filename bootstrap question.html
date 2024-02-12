@@ -1,27 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <h2>(1) What are the advantages of Bootstrap?</h2>
-    <p>ANS -> Speed of development: Bootstrap provides predefined design templates and classes that can save time and effort.<br>
-        - Responsiveness: Bootstrap enables the creation of websites that are compatible with different devices and screen sizes.<br>
-        - Consistency: Bootstrap ensures that the design and layout of the website are uniform across browsers and platforms.<br>
+    <p>ANS -> Speed of development: Bootstrap provides predefined design templates and classes that can save time and
+        effort.<br>
+        - Responsiveness: Bootstrap enables the creation of websites that are compatible with different devices and
+        screen sizes.<br>
+        - Consistency: Bootstrap ensures that the design and layout of the website are uniform across browsers and
+        platforms.<br>
         - Customizability: Bootstrap can be modified according to the needs and preferences of the project.<br>
         - Support: Bootstrap has a large and active community of developers and users who can provide help and feedback.
-         </p>
-         <h2>What is a Bootstrap Container, and how does it work?
-        </h2>
-         <p>ANS -> Bootstrap Containers are the most basic layout element in Bootstrap. Bootstrap Containers are very essential and basic building blocks of bootstrap that wrap a page’s content. It’s responsible for setting and aligning content within it according to viewport or given device. Containers are defined within the container class (.container). In other words, we can say that containers are established the width for the layout to give the content. Elements and content are added within the container.
+    </p>
+    <h2>(2) What is a Bootstrap Container, and how does it work</h2>
+    <p>ANS -> Bootstrap Containers are the most basic layout element in Bootstrap. Bootstrap Containers are very
+        essential and basic building blocks of bootstrap that wrap a page’s content. It’s responsible for setting and
+        aligning content within it according to viewport or given device. Containers are defined within the container
+        class (.container). In other words, we can say that containers are established the width for the layout to give
+        the content. Elements and content are added within the container.
 
-           <br> Containers are used for many purposes such as –<br><br>
-            
-            - It requires use with the default grid system.<br>
-            - To establish width for the layout to give web content.<br>
-            - To provide responsive fixed behavior of any web project.<br>
-            - To sets the content margin dealing with the responsive behavior of your layout.</p>
+        <br> Containers are used for many purposes such as –<br><br>
+
+        - It requires use with the default grid system.<br>
+        - To establish width for the layout to give web content.<br>
+        - To provide responsive fixed behavior of any web project.<br>
+        - To sets the content margin dealing with the responsive behavior of your layout.
+    </p>
+
+    <h2>(3) What are the default Bootstrap text settings?</h2>
+    <p>ANS -> <br>
+
+
+        1.text-muted: Sets the text color to a muted or subdued color.<br>
+
+        2.text-primary: Sets the text color to a primary color.<br>
+
+        3.text-secondary: Sets the text color to a secondary color.<br>
+
+        4.text-success: Sets the text color to indicate success.<br>
+
+        5.text-danger: Sets the text color to indicate danger or error.<br>
+
+        6.text-warning: Sets the text color to indicate a warning.<br>
+
+        7.text-info: Sets the text color to indicate information.<br>
+
+        8.text-light: Sets the text color to a light color for better visibility on dark backgrounds.<br>
+
+        9.text-dark: Sets the text color to a dark color for better visibility on light backgrounds.<br>
+
+        10.text-white: Sets the text color to white.<br>
+
+        11.text-body: Sets the text color to the default body color.<br>
+
+        12.text-reset: Resets the text color to the default color.</p>
+    <hr>
+    <h2>(4) What do you know about the Bootstrap Grid System?</h2>
+    <p>ANS -><br>
+        - Key features of the Bootstrap Grid System:<br>
+
+        (1) Container: The grid system is wrapped in a container. Bootstrap provides two types of containers: .container
+        (fixed-width container) and.
+        <br>
+        <!-- <div class="container">
+                    Your content here
+                </div> -->
+
+        <br>container-fluid (full-width container that spans the entire viewport).<br>
+        <!-- <div class="container-fluid">
+                    Your content here
+                </div> --><br>
+        (2) Rows: Rows are used to contain columns, and they should be placed within a container.<br>
+        <!-- <div class="row">
+                    Columns go here
+                </div> --><br>
+        (3) Columns: Bootstrap uses a 12-column layout system.<br>
+        <!-- <div class="col-md-6">
+                    Content here
+                </div> --><br>
+        (4) Responsive Classes: Bootstrap provides responsive classes for hiding or showing content based on screen
+        sizes.<br>
+        <!-- <div class="d-none d-md-block">
+                    Content visible on medium screens and above
+                </div> --><br>
+        (5) Offset Classes: You can create spacing between columns using offset classes.<br>
+        <!-- <div class="col-md-6 offset-md-3">
+                    Content here
+                </div> --><br>
+        (6) Nesting: You can nest rows and columns to create more complex layouts.<br>
+        <!-- <div class="row">
+                    <div class="col-md-6">
+                        Nested columns go here
+                    </div>
+                    <div class="col-md-6">
+                        Nested columns go here
+                    </div>
+                </div> -->
+    </p>
+    <hr>
+    <h2>(5) What is the difference between Bootstrap 4 and Bootstrap 5.</h2>
+    <p>ANS -><br>
+        jQuery Dependency:<br>
+
+        - Bootstrap 4 relies on jQuery for some of its features, such as the dropdowns and modal components.<br>
+        - Bootstrap 5 removed the dependency on jQuery, aiming for a more lightweight and modern approach. JavaScript
+        functionality has been rewritten using vanilla JavaScript.<br><br>
+        Customization Options:<br>
+
+        - In Bootstrap 4, customization and theming were primarily achieved using Sass variables.<br>
+        - Bootstrap 5 continued with Sass for styling but also introduced a new approach called "CSS Custom Properties"
+        (CSS variables), providing more flexibility and ease of customization for developers.<br><br>
+        Grid System Enhancements:<br>
+
+        - Bootstrap 4 retained the 12-column grid system but introduced improvements and simplifications. For instance,
+        the gutter width can now be customized using Sass variables.<br>
+        - Bootstrap 5 also introduced a new responsive grid tier called "xxl" for extra-large screens.<br><br>
+        IE 10 and 11 Support:<br>
+
+        - Bootstrap 4 supported Internet Explorer 10 and 11.<br>
+        - Bootstrap 5 dropped support for IE 10 and 11, focusing on modern browsers.
+    </p>
+    <hr>
+    <h2>(6) What is a Button Group, and what is the class for a basic Button Group?</h2>
+    <p>ANS -><br>
+        In Bootstrap, a basic Button Group is created using the '.btn-group' class. This class is applied to a container
+        element that wraps a set of individual button elements. Here's an example of how you might create a basic Button
+        Group:<br>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn bt btn-outline-primary">Primary</button>
+        <button type="button" class="btn bt btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn bt btn-outline-success">Success</button>
+    </div>
+    </p>
+    <hr>
+    <h2>(7) How can you use Bootstrap to make thumbnails?</h2>
+    <p>ANS -><br>
+        In Bootstrap, you can use the .img-thumbnail class to create image thumbnails. Thumbnails are typically smaller versions of images, often used in grids or lists to showcase a collection of images. Here's an example of how you can use Bootstrap to create thumbnails:<br>
+        <div class="container">
+          <h2>Image Thumbnails</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../practice/IMAGES/thumb1.jpg" alt="Thumbnail 1" class="img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <img src="../practice/IMAGES/thumb2.jpg" alt="Thumbnail 2" class="img-thumbnail">
+            </div>
+            <div class="col-md-4">
+              <img src="../practice/IMAGES/thumb3.jpg" alt="Thumbnail 3" class="img-thumbnail">
+            </div>
+          </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-pzjw8Y+J8Rq6Llq1Kz1zgk5kAmeM5KxBR8YoO1iF2E2K9V/mjafQ5cFLgi8i/E5D" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyO8l5fD5Xz8xNC0H8i/Tq7W9boTAU1Pi6" crossorigin="anonymous"></script>
+        </p><hr>
+        <h2>(8) In Bootstrap 4, what is flexbox?</h2>
+        <p>ANS -><br>
+        -Flex Container (display: flex;): In Bootstrap 4, the .d-flex class is used to create a flex container. This class is applied to an element to enable the Flexbox behavior.<br>
+        <div class="d-flex">
+            Flex items go here
+        </div><br>
+        -Flex Items: Elements inside a flex container are referred to as flex items. These items can dynamically adjust their size and order based on the Flexbox rules.<br>
+        -Flex Direction (flex-direction): Bootstrap 4 uses the .flex-row, .flex-column, .flex-row-reverse, and .flex-column-reverse classes to define the direction of the main axis.<br>
+        <div class="d-flex flex-row">
+            Flex items will arrange horizontally
+        </div>
+        <div class="d-flex flex-column">
+            Flex items will arrange vertically
+        </div><br>
+        -Justify Content (justify-content): Bootstrap 4 provides classes like .justify-content-start, .justify-content-end, .justify-content-center, and others to align flex items along the main axis.<br>
+        -Align Items (align-items): Classes such as .align-items-start, .align-items-end, .align-items-center, etc., are used to align flex items along the cross axis.
+    </p><hr>
+    <h2>(9) How can one create an alert in Bootstrap?</h2>
+    <p>ANS -><br>
+        <div class="container mt-3">
+          Alert with a close button
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            This is a success alert! <strong>Well done!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        
+          Alert without a close button
+          <div class="alert alert-warning" role="alert">
+            This is a warning alert! <strong>Pay attention!</strong>
+          </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js" integrity="sha384-pzjw8Y+J8Rq6Llq1Kz1zgk5kAmeM5KxBR8YoO1iF2E2K9V/mjafQ5cFLgi8i/E5D" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyO8l5fD5Xz8xNC0H8i/Tq7W9boTAU1Pi6" crossorigin="anonymous"></script>
+    </p>
+    <hr>
+    <h2>(10) What is a bootstrap card and how would you create one?</h2>
+    <p>ANS -> <br>
+        Create a Card:<br>
+        Use the following HTML structure to create a basic Bootstrap card:<br>
+        <div class="card">
+            <img src="../practice/IMAGES/thumb1.jpg" class="card-img-top" alt="Image Alt Text" style="height: 500px; width: 500px;">
+            <div class="card-body">
+              <h5 class="card-title">Card Title</h5>
+              <p class="card-text">Some example text. This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+          
+
+    </p>
 </body>
+
 </html>
